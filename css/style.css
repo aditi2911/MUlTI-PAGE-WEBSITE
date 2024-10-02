@@ -359,19 +359,45 @@ section {
     border-color: var(--secondary-color);
 }
 
-/* about section */
+/* about.html  section */
 .landing_about_section {
-    background: url("../assets/images/about/about-banner.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right center;
-    padding: 9rem 0;
+    display: flex; 
+    justify-content: flex-start; 
+    background: url("../assets/images/about/about-banner.jpg") no-repeat right center;
+    background-size: cover; /* Change to cover for full screen */
+    height: 100vh; 
+    padding: 0; 
 }
 
-.landing_about_section p{
-    color: var(--primary-text);
-    margin-bottom: 2rem;
-    margin-top: 5rem;
+.about-content {
+    margin-left: -10rem;
+    margin-top: 25.5rem;
+    height: auto;
+    width: auto;
+    padding: 2rem; 
+    text-align: left; 
+}
+
+.about-content h2 {
+    font-size: 5.0rem; 
+    color: var(--primary-text); 
+    margin-bottom: 1.5rem; 
+}
+
+.about-details {
+    margin-top: 1rem; 
+}
+
+.about-details p {
+    font-size: 1.9rem; 
+    line-height: 1.6; 
+    color: var(--secondary-text); 
+    margin-bottom: 1.5rem; 
+}
+
+.about-details p.fw-bold {
+    font-weight: bold; 
+    font-size: 1.5rem; 
 }
 
 /* product section */
@@ -418,90 +444,44 @@ section {
     bottom: 0;
 }
 
-/* Product Details Section */
-#product-details {
-    max-width: 400px; /* Adjust the max-width as needed */
-    margin: 20px auto; /* Center the section horizontally */
-    padding: 20px; /* Add padding around the content */
-    border: 1px solid #ddd; /* Add a light border */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    background-color: #fff; /* Background color */
+/* product.html  */
+/* Cart Section */
+#cartSection {
+    background-color: var(--bg-white);
+    padding: 3rem 2rem; /* Adjust padding for spacing */
+    border-radius: 0.5rem; /* Optional: add border radius for rounded corners */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
 }
 
-/* Product Image */
-#product-image {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    background: transparent;
-    border-radius: 8px; /* Rounded corners for the image */
-    object-fit: cover; /* Crop the image to fit */
+#cartSection h2 {
+    font-size: 3rem; /* Adjust heading size */
+    color: var(--primary-text); /* Set heading color */
+    margin-bottom: 2rem; /* Spacing below heading */
 }
 
-/* Product Name */
-#product-name {
-    font-size: 24px; 
-    margin-left: 150px; ; 
-    text-align: center;
-    color: var(--bg-dark-color); 
+#cartList {
+    border: 0.1rem solid var(--light-color); /* Add border to cart list */
+    border-radius: 0.5rem; /* Round corners of the list */
+    padding: 1rem; /* Inner padding for the list */
+    background-color: var(--bg-white); /* Background color for the list */
 }
 
-/* Product Description */
-#product-description {
-    font-size: 16px; 
-    margin-bottom: 10px; 
-    color: var(--bg-dark-color); 
+#cartList li {
+    font-weight: 500;
+    font-size: 2.2rem; /* Font size for list items */
+    color: var(--primary-text); /* Color for list item text */
+    padding: 1rem; /* Padding inside each list item */
+    border-bottom: 0.1rem solid var(--light-color); /* Bottom border for separation */
 }
 
-/* Product Price */
-#product-price {
-    font-size: 20px; 
-    font-weight: bold; 
-    color: var(--bg-dark-color); 
-    margin: 10px 0; 
+#cartList li:last-child {
+    border-bottom: none; /* Remove border from the last item */
 }
 
-/* Add to Cart Button */
-
-/* Button Hover Effect */
-#add-to-cart:hover {
-    background-color:var(--light-color); 
-    color: var(--bg-dark-color);
-}
-
- 
-/* Cart Summary Styles of product */
-.cart-summary {
-    background-color: var(--light-color); 
-    border: 0.1rem solid var(--secondary-color); 
-    border-radius: 0.5rem; 
-    padding: 2rem; 
-    margin-top: 2rem; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-}
-
-.cart-summary h3 {
-color: var(--bg-dark-color);
-}
-
-.cart-summary h2 {
-    font-size: 2.5rem; 
-    color: var(--primary-text); 
-    margin-bottom: 1.5rem; 
-    text-align: center; 
-}
-
-.cart-summary #cart-items {
-    font-size: 1.6rem; 
-    color: var(--primary-text); 
-    margin-bottom: 1.5rem; 
-}
-
-.cart-summary #cart-total {
-    font-size: 2rem; 
-    font-weight: bold; 
-    color: var(--secondary-color); 
-    text-align: center; 
+#totalPrice {
+    font-size: 2rem; /* Font size for total price */
+    color: var(--secondary-color); /* Color for total price text */
+    margin-top: 1.5rem; /* Spacing above total price */
 }
 
 
